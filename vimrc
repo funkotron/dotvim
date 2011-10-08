@@ -1,3 +1,4 @@
+cd ~/workspace/winwag/
 " Great sources & credits:
 " gmarik's vimrc - https://github.com/gmarik/vimfiles/blob/master/vimrc
 " durdn's vimrc - https://github.com/durdn/cfg/blob/master/.vimrc
@@ -13,11 +14,7 @@ set fileformats=unix,dos,mac  " Set file end-of-line priority.
 
 "set statusline=  " FIXME: Reset status line here.
 
-if has ("win32")  " Set mouse behaviour to be like the OS's.
-    behave mswin
-else
-    behave xterm
-endif
+behave xterm
 
 filetype plugin indent on  " Automatically detect file types, and enable file-type-specific plugins and indentation.
 
@@ -27,11 +24,7 @@ filetype plugin indent on  " Automatically detect file types, and enable file-ty
 " To clean ununsed plugins type ':BundleClean!'
 
 " Plugin manager initialization
-if has ("win32")
-    set runtimepath+=$HOME/vimfiles/vundle.git/ 
-else
-    set runtimepath+=$HOME/.vim/vundle.git/ 
-endif
+set runtimepath+=$HOME/.vim/vundle.git/ 
 
 call vundle#rc()
 
@@ -291,4 +284,5 @@ set tags=./tags;/
 
 "set timeoutlen=500  " Set key-combination timeout.
 
-set wildignorecase  " In-case-sensitive dir/file completion.
+"set wildignorecase  " case-insensitive dir/file completion.
+
