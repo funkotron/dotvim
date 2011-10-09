@@ -1,4 +1,7 @@
 cd ~/workspace/winwag/
+
+nmap <silent> <Leader>t :CommandT ~/workspace/winwag/<CR>
+nmap <silent> <Leader>b :CommandTBuffer<CR>
 " Great sources & credits:
 " gmarik's vimrc - https://github.com/gmarik/vimfiles/blob/master/vimrc
 " durdn's vimrc - https://github.com/durdn/cfg/blob/master/.vimrc
@@ -286,3 +289,9 @@ set tags=./tags;/
 
 "set wildignorecase  " case-insensitive dir/file completion.
 
+"Cut, copy and paste
+
+vmap <C-c> "+yi
+vmap <C-x> "+c
+vmap <C-v> c<ESC>"+p
+imap <C-v> <ESC>"+pa
