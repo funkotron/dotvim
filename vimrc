@@ -40,6 +40,9 @@ Bundle "desert256.vim"
 Bundle "tpope/vim-markdown"
 Bundle "pangloss/vim-javascript"
 Bundle "briangershon/html5.vim"
+Bundle "digitaltoad/vim-jade"
+Bundle "groenewege/vim-less"
+
 "Bundle "ChrisYip/Better-CSS-Syntax-for-Vim"
 Bundle "sukima/xmledit"
 Bundle "css3"
@@ -296,5 +299,4 @@ vmap <C-x> "+c
 vmap <C-v> c<ESC>"+p
 imap <C-v> <ESC>"+pa
 
-"Syntax highlighting for Less
-au BufNewFile,BufRead *.less set filetype=less
+call pathogen#infect()
