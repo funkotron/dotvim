@@ -300,3 +300,11 @@ vmap <C-v> c<ESC>"+p
 imap <C-v> <ESC>"+pa
 
 call pathogen#infect()
+
+:vnoremap > >gv
+:vnoremap < <gv
+
+" Alternative using Tab/Shift-Tab (for gvim).
+:vnoremap <Tab> >gv
+:vnoremap <S-Tab> <gv
+:behave mswin
