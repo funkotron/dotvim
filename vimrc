@@ -31,6 +31,9 @@ set runtimepath+=$HOME/.vim/vundle.git/
 
 call vundle#rc()
 
+" Git
+Bundle "tpope/vim-fugitive.git"
+
 " Colors
 Bundle "altercation/vim-colors-solarized"
 Bundle "nanotech/jellybeans.vim"

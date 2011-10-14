@@ -8,8 +8,8 @@ Have fun and fork at will! :)
 
 # Quick start
 
-1. Clone this repo: `git clone git://github.com/oryband/dotvim.git ~/.vim` - **Be careful not to override your own configuration...**
-2. Initialize the [Vundle](http://github.com/gmarik/vundle) plugin as a sub-repository:
+1. Clone this repo: `git clone git://github.com/funkotron/dotvim.git ~/.vim` - **Be careful not to override your own configuration...**
+2. Initialize the [Vundle](http://github.com/funkotron/vundle) plugin as a sub-repository:
 
         git submodule init
         git submodule update
@@ -18,3 +18,5 @@ Have fun and fork at will! :)
 4. The rest is fully documented in the `.virmc` source itself.
 
 **Enjoy!** :)
+
+TODO: Add more of the wonderments from [mir nazim's plugin list][http://mirnazim.org/writings/vim-plugins-i-use/]
