@@ -40,6 +40,7 @@ Bundle "nanotech/jellybeans.vim"
 Bundle "desert256.vim"
 
 " Syntax
+Bundle "vim-scripts/VOoM"
 Bundle "tpope/vim-markdown"
 Bundle "pangloss/vim-javascript"
 Bundle "briangershon/html5.vim"
