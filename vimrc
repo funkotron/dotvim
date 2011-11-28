@@ -310,8 +310,8 @@ set tags=./tags;/
 
 vmap <C-c> "+yi
 vmap <C-x> "+c
-nmap <C-v>"+p
-imap <C-v>"+pa
+nmap <C-v> <ESC>"+p
+imap <C-v> <ESC>"+pa
 
 call pathogen#infect()
 
