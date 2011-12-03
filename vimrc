@@ -22,6 +22,9 @@ behave xterm
 filetype on
 filetype plugin indent on  " Automatically detect file types, and enable file-type-specific plugins and indentation.
 
+"VimOrganizer (ORGMODE for Vim)
+au! BufRead,BufWrite,BufWritePost,BufNewFile *.org 
+au BufEnter *.org            call org#SetOrgFileType()
 
 "Vim LaTeX
 " OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
@@ -47,6 +50,7 @@ Bundle "nanotech/jellybeans.vim"
 Bundle "desert256.vim"
 
 " Syntax
+Bundle "hsitz/VimOrganizer"
 Bundle "jcf/vim-latex"
 Bundle "vim-scripts/VOoM"
 Bundle "tpope/vim-markdown"
