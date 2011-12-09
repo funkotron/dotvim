@@ -433,7 +433,7 @@ call pathogen#infect()
     colorscheme nucolors
 
   else
-    colorscheme nucolors
+    colorscheme jellybeans
 endif
 " }}}
 " Status line {{{
