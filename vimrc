@@ -25,6 +25,8 @@ filetype plugin indent on  " Automatically detect file types, and enable file-ty
 "VimOrganizer (ORGMODE for Vim)
 au! BufRead,BufWrite,BufWritePost,BufNewFile *.org 
 au BufEnter *.org            call org#SetOrgFileType()
+au BufEnter *.org            AutoComplPopDisable
+au BufEnter *.org            setl tw=80
 
 "Vim LaTeX
 " OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
@@ -158,8 +160,8 @@ autocmd colorscheme * call GlobalColorSettings()  " Call the global color settin
 set nowrap     " No line wrapping.
 set linebreak  " Wrap at word.
 
-set textwidth=0  " Desirable text width. Used for text auto-wrapping. 0 means no auto-wrapping.
-autocmd FileType * set formatoptions=r,2  " Enable auto-wrapping comments, comment leader auto-insertion in <Insert> mode, auto-format paragraphs, keep last line indentation. Disable all other format options. NOTE: Requires 'set autoindent'. autocmd FileType is required since formatoptions i set differently for each fiel type (.c, .py, etc.).
+"set textwidth=0  " Desirable text width. Used for text auto-wrapping. 0 means no auto-wrapping.
+"autocmd FileType * set formatoptions=r,2  " Enable auto-wrapping comments, comment leader auto-insertion in <Insert> mode, auto-format paragraphs, keep last line indentation. Disable all other format options. NOTE: Requires 'set autoindent'. autocmd FileType is required since formatoptions i set differently for each fiel type (.c, .py, etc.).
 
 set backspace=indent,eol,start  " Enable backspace key. Erase previously entered characters in insert mode.
 
